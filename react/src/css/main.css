@@ -1,0 +1,146 @@
+#main {
+    flex-grow: 1;
+    padding: 2vh 4vw;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+hr {
+    border: 1px solid #54301d;
+}
+
+#about p {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+@media screen and (min-width: 550px) {
+    #about p {
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #about p {
+        text-align: center;
+    }
+}
+
+h2 {
+    margin: 0;
+}
+
+#contact-header {
+    margin-bottom: 0;
+}
+
+.contact {
+    font-size: 1.4em;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: -1.5vw;
+}
+
+@media screen and (min-width: 750px) {
+    .contact #contact-ear {
+        width: 15vw;
+        max-width: 300px;
+        margin-left: -10vw;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .contact #contact-ear {
+        width: 30vw;
+    }
+}
+
+#admin-categories {
+    display: flex;
+    margin-top: 4vh;
+}
+
+#admin-categories {
+    flex-direction: column;
+}
+
+.admin-head {
+    margin-bottom: 1vh;
+}
+
+.admin-category {
+    flex-grow: 1;
+    margin-bottom: 5vh;
+}
+
+#admin-cms .admin-button {
+    margin: 0.5vh 0.5vw;
+    color: #faf6e2;
+    background-color: #54301d;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.admin-head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#admin-cms .admin-cell, #admin-cms th {
+    border: 1px solid #54301d;
+    padding: 0.5vh 0.5vw;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+#editor {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+}
+
+#editor button, #editor input, #editor-image {
+    margin: 1vh 1vw;
+}
+
+#editor-filename {
+    margin-left: 2vw;
+}
+
+#login {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+#login > * {
+    margin: 1vh 1vw;
+}
+
+#progress {
+    border: 1px solid #54301d;
+    border-radius: 5px;
+    background-color: #54301d;
+}
+
+#progress > * {
+    background-color: #faf6e2;
+}
+
+#admin-cms #login-failed {
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 9px;
+    color: red;
+    text-align: center;
+    margin: 1vw 1vh;
+}

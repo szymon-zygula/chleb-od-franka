@@ -1,0 +1,113 @@
+#header {
+    flex-direction: column;
+    color: #54301d;
+    background-color: #faf6e2;
+}
+
+#header .header-separator {
+    background-color: #54301d;
+    color: #faf6e2;
+    min-height: 2vh;
+}
+
+#header .header-title {
+    padding: 0.5vh calc(0.75vw - 2.5px);
+}
+
+#nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1vh 1vw 1vh 1.5vw;
+}
+
+#menu-nav * {
+    font-family: 'Advent Pro Light';
+    font-size: 1.05em;
+}
+
+#nav-buttons {
+    justify-content: right;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 1500px) {
+    #logo {
+        width: calc(1500px * 0.25);
+        margin-left: calc(1500px * 0.03 + 0.25);
+    }
+
+    #header .header-title {
+        font-size: calc(1500px * 0.037);
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1500px) {
+    #logo {
+        width: 25vw;
+        margin-left: calc(1vw + 0.25);
+    }
+
+    #header .header-title {
+        font-size: 3.7vw;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #logo {
+        width: calc(900px * 0.25);
+        margin-left: calc(900px * 0.03 + 0.25);
+    }
+
+    #header .header-title {
+        font-size: calc(900px * 0.037);
+    }
+}
+
+#banner {
+    height: 65vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    border: 0px;
+    background-image: url('/banner4.jpg');
+}
+
+@media screen and (max-width: 900px) {
+    #nav-buttons {
+        display: none;
+    }
+
+    #menu-button {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    #nav-buttons {
+        display: flex;
+    }
+
+    #menu-button {
+        display: none;
+    }
+}
+
+#header h1 {
+    padding: 0;
+    margin: 1vh 0;
+}
+
+#menu-button, #header #nav button.nav-button {
+    color: #54301d;
+    border-color: #54301d;
+    margin-right: 2vw;
+    font-size: 1.1em;
+    font-weight: bold;
+}

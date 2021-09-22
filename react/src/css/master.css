@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Advent Pro Light';
+    src: url('/apl.ttf');
+}
+
+body {
+    line-height: 1;
+    color: #54301d;
+    background-color: #faf6e2;
+}
+
+body * {
+    font-family: 'Advent Pro Light';
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.inline {
+    display: inline-block;
+}

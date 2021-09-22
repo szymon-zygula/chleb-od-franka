@@ -1,0 +1,157 @@
+#vg-con {
+    display: flex;
+    justify-content: center;
+}
+
+#vg-key {
+    text-align: center;
+    font-size: 1.6em;
+    margin-bottom: 5vh;
+}
+
+#vg-key img {
+    width: 2em;
+    margin-top: -0.3em;
+}
+
+#vg-key > div {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.product-category {
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.product-name {
+    font-size: 1.5em;
+}
+
+.product-name img {
+    width: 1em;
+    height: auto;
+    display: inline;
+    margin-left: 0.3em;
+}
+
+.product-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    margin-bottom: 3vh;
+}
+
+.product-description {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.product-content img {
+    height: auto;
+    margin-bottom: 2vh;
+}
+
+@media screen and (min-width: 1000px) {
+    .product-content > * {
+        vertical-align: top;
+        display: inline-block; 
+    }
+
+    .product-description, .product-content img {
+        width: 30vw;
+        max-width: 300px;
+        min-width: 200px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .product-description, .product-content img {
+        width: 40vw;
+        max-width: 500px;
+        min-width: 300px;
+    }
+}
+
+.product-ingredients {
+    margin: 0 0 1vh 1vw;
+}
+
+.product-price-mass {
+    margin-top: 1vh;
+    font-weight: bold;
+}
+
+#products-tabs {
+    margin-bottom: 4vh;
+    justify-content: center;
+}
+
+#products-tabs > div > div > div > button {
+    font-size: 1.25em;
+}
+
+#products-tabs > div > div > span {
+    background-color: #54301d;
+}
+
+#products #progress {
+    max-width: 800px;
+    width: 50vw;
+}
+
+#progress-con {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100vh;
+}
+
+@media screen and (max-width: 800px) {
+    #products-tabs {
+        display: none;
+    }
+
+    #products-select {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    #products-tabs {
+        display: flex;
+    }
+
+    #products-select {
+        display: none;
+    }
+}
+
+#products-select *::after {
+    border-bottom: 2px solid #54301d;
+}
+
+#products-select {
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 4vh;
+}
+
+#products-select > div > div > div {
+    font-size: 1.75em;
+    font-weight: bold;
+}
+
+#menu-category-products ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-category-products ul li {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
